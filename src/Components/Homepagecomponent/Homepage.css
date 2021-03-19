@@ -1,0 +1,63 @@
+.decorated{
+    overflow: hidden;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 10px;
+    color: red;
+}
+.decorated > span{
+   position: relative;
+   display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   border-bottom: 2px solid red;
+   width: 10vw;
+   margin: 0 20px;
+}
+.decorated > span:before{
+   right: 100%;
+}
+.decorated > span:after{
+   left: 100%;
+}
+
+input[type=text]{
+  padding:10px;
+  border-radius:10px;
+  width:20%;
+  background:transparent;
+}
+.player-info form select{
+    width: 20%;
+    margin-top: 1%;
+    opacity: 1;
+    padding: 10px;
+    border-radius:10px;
+    background:transparent;
+}
+
+.container{
+    height: 700px;
+}
+.row{
+    margin-top: 5%;
+}
+
+.start-game{
+   
+    background-color: yellow ;
+}
+#submit{
+    top:10px;
+}
+
+.form-field-font{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    background: transparent;
+    opacity: 10;
+}

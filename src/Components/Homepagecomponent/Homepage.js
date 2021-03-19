@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckSquare, faCoffee, faKeyboard, faPlay, faPlayCircle } from '@fortawesome/fontawesome-free-solid'
-import background from "./rectangle-1@3x.png";
+import { faKeyboard, faPlay } from '@fortawesome/fontawesome-free-solid'
+// import background from "./rectangle-1@3x.png";
 import vectorimage from "./Group 243@3x.png"
 import "./Homepage.css"
 
@@ -23,13 +23,13 @@ export default class HomePage extends Component{
       };
 
     handleClick = (e) =>{
-        const {playername,difficulty}=this.state;
+        const {playername,selectedOption}=this.state;
 
-        console.log({playername,difficulty})
+        console.log({playername,selectedOption})
         console.log("clicked")
     };
     render(){
-        const{playername,difficulty} = this.state;
+        const{playername} = this.state;
         return (  
 <div class="container" style={{backgroundImage:`url(${vectorimage})`,width:"auto",position:"relative"}}>
 <div class="row">
@@ -45,8 +45,8 @@ export default class HomePage extends Component{
           <input type="text" name="playername" id="playername" placeholder="Player name" value={playername} onChange={this.handleChange}></input>
           </div >
            <div class="form-field"></div>
-           <select name='selectedOption' onChange={this.handleChange}>
-        {this.state.options.map(i => i == this.state.selectedOption ? (
+           <select name='selectedOption' onChange={this.handleChange} >
+        {this.state.options.map(i => i === this.state.selectedOption ? (
         <option value={i} selected>
           {i}
         </option>

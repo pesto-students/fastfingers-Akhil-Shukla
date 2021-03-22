@@ -5,9 +5,7 @@ import "./Gamescreen.css"
 
 
 export default class Gamescreen extends Component{
-    constructor(props){
-        super(props);
-    }
+    
     handleClick(){
         window.location.href='http://localhost:3000/home'
         console.log(window.location.href)
@@ -51,7 +49,7 @@ export default class Gamescreen extends Component{
                 </div>
                 <div class="col-sm-4">  
                 <div>
-                    
+
                 </div>
                     <div class="playerInput">
                         <input type="text"></input>

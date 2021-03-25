@@ -28,7 +28,7 @@ input[type=text]{
   padding:10px;
   border-radius:10px;
   width:20%;
-  background:transparent;
+  background:white;
 }
 .player-info form select{
     width: 20%;
@@ -36,7 +36,7 @@ input[type=text]{
     opacity: 1;
     padding: 10px;
     border-radius:10px;
-    background:transparent;
+    background:white;
 }
 
 .container{
@@ -57,7 +57,8 @@ input[type=text]{
 .form-field-font{
     display: flex;
     flex-direction: row;
-    margin-left: 40%;
+    justify-content: center;
     background: transparent;
     opacity: 10;
+    color: red;
 }
